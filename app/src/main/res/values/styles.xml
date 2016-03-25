@@ -1,0 +1,57 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        <item name="android:actionBarStyle">@style/AppTheme.ActionBar</item>
+    </style>
+
+    <!-- Application theme. -->
+
+
+
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:actionBarStyle">@style/AppTheme.ActionBar</item>
+    </style>
+
+    <style name="AppTheme.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:titleTextStyle">@style/AppTheme.ActionBar.TitleTextStyle</item>
+        <item name="android:background">@color/holoPressed</item>
+        <item name="android:displayOptions">useLogo|showHome|showTitle</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="customActionBarDropDownStyle" parent="android:style/Widget.Holo.Light.Spinner">
+        <item name="android:background">@color/holoPressed</item>
+    </style>
+
+    <style name="AppCustomTheme" parent="android:Theme.Holo.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        <item name="android:actionBarStyle">@style/AppTheme.ActionBar</item>
+        <item name="android:actionDropDownStyle">@style/customActionBarDropDownStyle</item>
+    </style>
+    <color name="nolog">#d9d7d7</color>
+    <color name="bCalm">#000000</color>
+    <color name="bFocus">#4a85f8</color>
+    <color name="bPressed">#0e5df6</color>
+    <color name="white">#fff</color>
+    <color name="holoFocus">#33b5e5</color>
+    <!--   <color name="holoPressed">#56b8d8</color> -->
+    <color name="holoPressed">#33c0ef</color>
+    <color name="grey">#e9e9e9</color>
+</resources>

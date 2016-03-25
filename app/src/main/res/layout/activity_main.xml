@@ -1,0 +1,90 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/lrpad" >
+
+            <Spinner
+                android:id="@+id/spinner_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false" />
+
+            <EditText
+                android:id="@+id/logField"
+                android:layout_width="254dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:layout_weight="0.32"
+                android:ems="10"
+                android:hint="@string/login"
+                android:inputType="textPersonName"
+                android:minEms="10"
+                />
+            <requestFocus />
+            <EditText
+                android:id="@+id/passField"
+                android:layout_width="254dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.32"
+                android:ems="10"
+                android:hint="@string/pass"
+                android:inputType="textPassword"
+                android:minEms="10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id = "@+id/ll1"
+            android:layout_width="167dp"
+            android:layout_height="70dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/AppTheme"
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/lrpad" >
+
+            <Button
+                android:id="@+id/do_it"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/lrpad"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:text="@string/connect"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button2"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:text="@string/serv_ed"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>
